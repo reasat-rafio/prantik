@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@1,300&display=swap");
+
+.Introduction-box {
+  height: 400px;
+  justify-content: space-around;
+  margin: auto;
+  flex-direction: row;
+  display: flex;
+  width: 70vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.first-box,
+.second-box,
+.third-box {
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 400px;
+}
+
+.first-box {
+  background-color: aqua;
+}
+
+.second-box {
+  background-color: blueviolet;
+}
+
+.third-box {
+  background-color: khaki;
+}
+
+.first-box h3,
+.second-box h3,
+.third-box h3 {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+}
+
+.first-box p,
+.second-box p,
+.third-box p {
+  font-weight: 600;
+  padding: 30px 5px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.first-box button,
+.second-box button,
+.third-box button {
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  padding: 10px 11px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .Introduction-box {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .first-box,
+  .second-box,
+  .third-box {
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+  }
+}

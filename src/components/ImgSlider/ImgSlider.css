@@ -1,0 +1,84 @@
+body {
+  overflow-x: hidden;
+}
+
+.ImgSlider {
+  width: 90vw;
+  margin: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+  height: 480px;
+  position: relative;
+}
+
+.ImgSlider h1 {
+  text-align: center;
+}
+
+.ImgSlider button {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+
+.ImgSlider .next {
+  right: 0;
+}
+
+.cards-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.17s linear;
+  transition: all 0.17s linear;
+}
+
+.Cards {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.Cards .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 330px;
+  width: 240px;
+}
+
+.Cards .card-box img {
+  cursor: pointer;
+  padding: 0 4px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.card-icon {
+  position: absolute;
+  z-index: 100;
+  outline: none;
+  border: none;
+}
+
+.card-icon:hover {
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.card-box.info {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=ImgSlider.css.map */

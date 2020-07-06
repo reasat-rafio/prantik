@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+#nav {
+  background: rgb(1, 30, 47);
+  list-style: none;
+  display: flex;
+  color: white;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+}
+.fix {
+  width: 100%;
+  height: 0;
+}
+
+.toolbar_navigation {
+  height: 53px;
+  width: 100%;
+  display: flex;
+}
+
+.navigation {
+  margin-left: auto;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.option {
+  outline: none;
+  z-index: 100;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.option a {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255);
+}
+
+.option a:hover {
+  color: #ffffff;
+}
+
+.logo {
+  outline: none;
+  margin-left: 6px;
+  border-radius: 2px;
+  font-size: 25px;
+  background-color: #e2fdfb;
+  color: black;
+  font-weight: 600;
+  max-width: 0px;
+  transform: translateX(-300%);
+  opacity: 0;
+}
+
+.active #nav {
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  position: fixed !important;
+}
+
+.logo {
+  letter-spacing: 5px;
+  font-family: "roboto", cursive;
+  color: aliceblue;
+}
+
+.active .logo {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+  padding: 7px 15px;
+  max-width: 400px;
+  background: rgb(2, 93, 146);
+}
+
+.navigation > li {
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+
+.navigation > li:hover {
+  border-radius: 4px;
+  background-color: rgb(1, 77, 121);
+}
+
+.toolbar_navigation img {
+  margin-left: 30px;
+  width: 90px;
+  height: 53px;
+}
+
+@media (max-width: 760px) {
+  .toolbar_navigation {
+    display: none;
+  }
+}

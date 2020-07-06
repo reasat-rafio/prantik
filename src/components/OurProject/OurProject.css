@@ -1,0 +1,53 @@
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important ;
+}
+
+.overflow img {
+  height: 300px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.9rem;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-box {
+  width: 100vw;
+  margin-top: 2rem;
+}
+
+.card-box h1 {
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 2px;
+  color: rgb(1, 77, 121);
+}
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+.col-md-3 {
+  padding-top: 8px;
+}
+.row {
+  justify-content: center;
+  margin: none !important;
+}

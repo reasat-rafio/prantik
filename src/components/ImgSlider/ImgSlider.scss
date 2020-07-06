@@ -1,0 +1,64 @@
+body {
+  overflow-x: hidden;
+}
+
+.ImgSlider {
+  width: 90vw;
+  margin: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+  height: 480px;
+  position: relative;
+  h1 {
+    text-align: center;
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+  }
+
+  .next {
+    right: 0;
+  }
+}
+.cards-slider-wrapper {
+  display: flex;
+  transition: all 0.17s linear;
+}
+
+.Cards {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .card-box {
+    display: flex;
+    height: 330px;
+    width: 240px;
+
+    img {
+      cursor: pointer;
+      padding: 0 4px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}
+.card-icon {
+  position: absolute;
+  z-index: 100;
+  outline: none;
+  border: none;
+  &:hover {
+    box-shadow: 1px 1px 1px black;
+    transform: translateY(2px);
+  }
+}
+.card-box.info {
+  margin-top: 20px;
+}
